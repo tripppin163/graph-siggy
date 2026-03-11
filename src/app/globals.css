@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #f4f4f5;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes binary-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-35%);
+  }
+}
+
+@keyframes binary-right {
+  0% {
+    transform: translateX(-35%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-binary-left {
+  animation: binary-left linear infinite;
+}
+
+.animate-binary-right {
+  animation: binary-right linear infinite;
+}
+
+.siggy-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(16, 185, 129, 0.45) transparent;
+}
+
+.siggy-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.siggy-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.siggy-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    rgba(16, 185, 129, 0.25),
+    rgba(16, 185, 129, 0.55)
+  );
+  border-radius: 999px;
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.siggy-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(16, 185, 129, 0.35),
+    rgba(16, 185, 129, 0.7)
+  );
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(16, 185, 129, 0.45) transparent;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    rgba(16, 185, 129, 0.25),
+    rgba(16, 185, 129, 0.55)
+  );
+  border-radius: 999px;
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(16, 185, 129, 0.35),
+    rgba(16, 185, 129, 0.7)
+  );
+}
