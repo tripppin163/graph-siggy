@@ -6,7 +6,7 @@ import BinaryBackground from "../components/BinaryBackground";
 const starterMessages = [
   {
     role: "assistant",
-    text: "Gritual. Siggy is online. Ask about Ritual, EVM++, Infernet, smart agents, roles, or any other part of the machinery. By the way, are you perhaps a cute little cat??? If so, I'm waiting for a photo of your paws, kiddo",
+    text: "Ritual. Siggy is online. Ask about Ritual, EVM++, Infernet, smart agents, roles, or any other part of the machinery. By the way, are you perhaps a cute little kitty??? If so, I’m waiting for a photo of your paws, cutie. 🐾",
   },
 ];
 
